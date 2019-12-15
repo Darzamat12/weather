@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="sfsf"></div>
+    <header class="header">
+        <div class="header__switching-pannel">
+            <div class="header__switching-pannel_change-bg">
+                <img src="../assets/Refresh BG.svg" alt="Refresh Background">
+            </div>
+            <div class="header__switching-pannel_language">
+                <p class="current-language">EN</p>
+                <img src="../assets/Vector (Stroke).svg">
+            </div>
+            <div class="header__switching-pannel_celcius-farengheit">
+                <div class="celcius celcius-farengheit-active">C</div>
+                <div class="farengheit ">F</div>
+            </div>
+        </div>
+        <form class="header__search">
+            <div class="header__search__input">
+                <input class="search-city" color="white" type="text" placeholder="Search city or ZIP">
+                <button type="button" class="voice-search"></button>
+            </div>
+            <button type="button" class="header__search_button">
+            </form>
+    </header>
+    <main class="main">
+        <div class="temp">
+            <div class="country-city">
+                <p class="current-city"></p>&nbsp;
+                <p class="current-country"></p>
+            </div>
+            <div class="date-time">
+                <div class="date">
+
+                </div>
+                &emsp;
+                <div class="time">17:23</div>
+            </div>
+            <div class="todays-weather">
+                <div class="tempreture">10&deg;</div>
+                <div class="weather__details">
+                    <div class="weather_image">
+                        <img width=100% src="../assets/Weather_image.svg">
+                    </div>
+                    <div class="weather_description">
+                        <ul>
+                            <li>Overcast</li>
+                            <li>Feels like:&nbsp;<p></p></li>
+                            <li>Wind:&nbsp;<p></p>m/s</li>
+                            <li>Humidity:&nbsp;<p></p>&#37;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="future-weather">
+                <div class="future_day">
+                    <p>Tuesday</p>
+                    <div class="future_temp">
+                    <h1>7</h1>&deg;
+                    <img class="future-image" src="http://openweathermap.org/img/w/04d.png" alt="">
+                    </div>
+                </div>
+                <div class="future_day">
+                    <p>Tuesday</p>
+                    <div class="future_temp">
+                    <h1>7</h1>&deg;
+                    <img class="future-image" src="../assets/Weather_image.svg" alt="">
+                    </div>
+                </div>
+                <div class="future_day">
+                    <p>Tuesday</p>
+                    <div class="future_temp">
+                    <h1>7</h1>&deg;
+                    <img class="future-image" src="../assets/Weather_image.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="geolocation">
+            <div class="geolocation_map"></div>
+            <div class="geolocation_latitude"></div>
+            <div class="geolocation_longitude"></div>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
