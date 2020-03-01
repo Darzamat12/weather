@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="sfsf"></div>
+    
     <header class="header">
         <div class="header__switching-pannel">
             <div class="header__switching-pannel_change-bg">
                 <img src="../assets/Refresh BG.svg" alt="Refresh Background">
-            </div>
-            <div class="header__switching-pannel_language">
-                <p class="current-language">EN</p>
-                <img src="../assets/Vector (Stroke).svg">
             </div>
             <div class="header__switching-pannel_celcius-farengheit">
                 <div class="celcius celcius-farengheit-active">C</div>
@@ -26,9 +24,11 @@
         <form class="header__search">
             <div class="header__search__input">
                 <input class="search-city" color="white" type="text" placeholder="Search city or ZIP">
-                <button type="button" class="voice-search"></button>
+                <button type="button" class="voice-search">
+                    <img src="../assets/microsvg.svg">
+                </button>
             </div>
-            <button type="button" class="header__search_button">
+            <button type="button" class="header__search_button">Search</button>
             </form>
     </header>
     <main class="main">
@@ -85,7 +85,10 @@
             </div>
         </div>
         <div class="geolocation">
-            <div class="geolocation_map"></div>
+            <div class="geolocation_map">
+                <div id ="map"></div>
+                
+            </div>
             <div class="geolocation_latitude"></div>
             <div class="geolocation_longitude"></div>
         </div>
