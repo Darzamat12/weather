@@ -1,3 +1,5 @@
+
+
 const time=document.querySelector('.time');
 const currentDate =document.querySelector('.date');
 const farengheits=document.querySelector('.farengheit')
@@ -13,9 +15,7 @@ let img =new Image();
 async function getGeoLocation() {
     let a= await fetch(url);
    const b= await a.json();
-   await console.log (b);
    dataLocation= await b;
-   console.log(dataLocation);
    return await b;
     
 }
@@ -55,7 +55,7 @@ clockStart();
 async function getTemp(){
     const tempURL=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&type=like&${tempMetric}&APPID=56c5a38b11c4c56fbcf54f474a72d731`;
     let res = await fetch(tempURL);
-    const resJson = await a.json();
+    const resJson = await res.json();
     const futureWeather=document.querySelector('.future-weather');
     dataTemp=await resJson;
     getLinkToImage();
