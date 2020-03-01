@@ -7,11 +7,9 @@
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sfsf{
-}
 body{
     width:100%;
-    background-size: 100% 113%;
+    background-size: 100% 1100px;
     background-repeat: no-repeat;
 
 }
