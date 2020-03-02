@@ -7,3 +7,4 @@ Weather forecast webpage.
 * Automatic geolocation, showing map and weather according to it
 * Opportunity to find the weather of any city, that you want
 * Background, which is loading according to weather, season, location etc.
+* Map showing location of the current city
